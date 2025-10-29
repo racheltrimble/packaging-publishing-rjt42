@@ -1,0 +1,20 @@
+[project]
+name = "cancer-prediction-rjt42"
+version = "0.1.0"
+description = "A basic cancer prediction model"
+authors = [{name = "Rachel Russell"}]
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=7.1.0",
+    "matplotlib>=3.10.7",
+    "numpy>=2.3.4",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.7.2",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.9.0",
+    "flake8>=7.3.0",
+    "isort>=7.0.0",
+]
