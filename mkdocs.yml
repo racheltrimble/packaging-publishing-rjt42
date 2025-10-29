@@ -1,0 +1,13 @@
+site_name: Cancer Prediction
+site_url: https://github.com/racheltrimble/cancer-prediction-rjt42
+repo_url: https://github.com/racheltrimble/cancer-prediction-rjt42
+nav:
+  - Home: index.md
+  - cancer-prediction-rjt42:
+    - cancer model: cancer-prediction-rjt42/cancer_model.md
+    - app: cancer-prediction-rjt42/scripts/app.md
+theme: readthedocs
+plugins:
+  - mkdocstrings
+watch:
+  - .  # reload docs for file changes
