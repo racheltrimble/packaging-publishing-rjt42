@@ -1,1 +1,3 @@
 from cancer_prediction_rjt42.cancer_model import CancerModel
+
+__all__ = ["CancerModel"]

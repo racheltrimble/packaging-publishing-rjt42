@@ -1,3 +1,4 @@
+import pickle
 import warnings
 
 import numpy as np
@@ -9,8 +10,6 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
 warnings.filterwarnings("ignore")
-
-import pickle
 
 
 class CancerModel:
@@ -107,7 +106,8 @@ class CancerModel:
             X (np.ndarray | pd.DataFrame): The features
 
         Returns:
-            list[tuple[str, float]]: A list of tuples containing the diagnosis and the confidence
+            list[tuple[str, float]]: A list of tuples containing the diagnosis
+            and the confidence
         """
         predictions = self.model.predict(X)
         diagnoses = [self.target_to_diagnosis(p) for p in predictions]
