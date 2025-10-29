@@ -5,6 +5,7 @@ description = "A basic cancer prediction model"
 authors = [{name = "Rachel Russell"}]
 requires-python = ">=3.11"
 dependencies = [
+    "click>=8.3.0",
     "ipykernel>=7.1.0",
     "matplotlib>=3.10.7",
     "numpy>=2.3.4",
@@ -18,3 +19,12 @@ dev = [
     "flake8>=7.3.0",
     "isort>=7.0.0",
 ]
+[project.scripts]
+cancer-prediction = "cancer_prediction_rjt42.scripts.app:cli"
+
+[tool.uv]
+package = true
+
+[build-system]
+requires = ["uv_build>=0.9.5,<0.10.0"]
+build-backend = "uv_build"

@@ -56,8 +56,9 @@ wheels = [
 [[package]]
 name = "cancer-prediction-rjt42"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
+    { name = "click" },
     { name = "ipykernel" },
     { name = "matplotlib" },
     { name = "numpy" },
@@ -74,6 +75,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "click", specifier = ">=8.3.0" },
     { name = "ipykernel", specifier = ">=7.1.0" },
     { name = "matplotlib", specifier = ">=3.10.7" },
     { name = "numpy", specifier = ">=2.3.4" },
